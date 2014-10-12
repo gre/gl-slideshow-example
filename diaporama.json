@@ -1,0 +1,78 @@
+{
+  "loop": true,
+  "timeline": [
+  {
+    "image": "./images/run.jpg",
+    "duration": 4000,
+    "kenburns": {
+      "from": [ 0.5, [0.5, 0.6] ],
+      "to": [ 1, [0.5, 0.6] ]
+    },
+    "transitionNext": {
+      "name": "crosszoom",
+      "duration": 1000
+    }
+  },
+  {
+    "image": "./images/barley.jpg",
+    "duration": 3000,
+    "kenburns": {
+      "from": [ 0.9 ],
+      "to": [ 0.7, [0.8, 0.6] ]
+    },
+    "transitionNext": {
+      "name": "linearblur",
+      "duration": 1000
+    }
+  },
+  {
+    "image": "./images/leaves.jpg",
+    "duration": 5000,
+    "kenburns": {
+      "from": [ 0.7, [0, 0.5] ],
+      "to": [ 0.7, [1, 0.5] ]
+    },
+    "transitionNext": {
+      "name": "DoomScreenTransition",
+      "duration": 2000
+    }
+  },
+  {
+    "image": "./images/gladiator.jpg",
+    "duration": 5000,
+    "kenburns": {
+      "from": [ 0.3, [0.5, 0.8] ],
+      "to": [ 1 ]
+    },
+    "transitionNext": {
+      "name": "doorway",
+      "duration": 1000
+    }
+  },
+  {
+    "image": "./images/train.jpg",
+    "duration": 4000,
+    "kenburns": {
+      "from": [ 1 ],
+      "to": [ 0.3 ]
+    },
+    "transitionNext": {
+      "name": "heartwipe",
+      "duration": 1000
+    }
+  },
+  {
+    "image": "./images/paris.jpg",
+    "duration": 4000,
+    "kenburns": {
+      "from": [ 0.4, [1.0, 0.5] ],
+      "to":   [ 1.0, [0.5, 0.5] ],
+      "easing": [0.3,0,1,1]
+    },
+    "transitionNext": {
+      "name": "pagecurl",
+      "duration": 2000
+    }
+  }
+  ]
+}
