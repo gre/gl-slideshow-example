@@ -46,7 +46,13 @@
     },
     "transitionNext": {
       "name": "doorway",
-      "duration": 2000
+      "duration": 2000,
+      "uniforms": {
+        "reflection": 0.4,
+        "perspective": 0.4,
+        "depth": 3
+      },
+      "easing": [ 0, 0, 1, 1 ]
     }
   },
   {
@@ -67,7 +73,7 @@
     "kenburns": {
       "from": [ 0.4, [1.0, 0.5] ],
       "to":   [ 1.0, [0.5, 0.5] ],
-      "easing": [0.3,0,1,1]
+      "easing": [0.3, 0, 1, 1]
     },
     "transitionNext": {
       "name": "pagecurl",
