@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gre/gl-slideshow-example",
   "dependencies": {
-    "glsl-transitions": "^2014.10.10"
+    "diaporama": "^1.0.1",
+    "glsl-transitions": "^2015.2.15"
   }
 }
