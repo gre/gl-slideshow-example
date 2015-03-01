@@ -1,6 +1,19 @@
 {
-  "loop": true,
   "timeline": [
+  {
+    "canvas2d": {
+      "background": "#EDA",
+      "size": [ 800, 600 ],
+      "draws": [
+        { "font": "bold 80px sans-serif", "fillStyle": "#000", "textBaseline": "middle", "textAlign": "center" },
+        [ "fillText", "My Super Diaporama", 400, 300 ]
+      ]
+    },
+    "duration": 500,
+    "transitionNext": {
+      "duration": 1000
+    }
+  },
   {
     "image": "./images/run.jpg",
     "duration": 5000,

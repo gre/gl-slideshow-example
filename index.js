@@ -16,10 +16,18 @@ var diaporama = Diaporama(div, {
   loop: true
 });
 
-window.addEventListener("resize", function () {
-  diaporama.width = window.innerWidth;
-  diaporama.height = window.innerHeight;
-});
+var threshold = 1024 * 512;
+
+function resize () {
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  diaporama.width = w;
+  diaporama.height = h;
+  diaporama.resolution = Math.min(window.devicePixelRatio||1, Math.ceil((threshold) / (w * h))); // heuristic to degrade the quality for higher resolution
+}
+
+window.addEventListener("resize", resize);
+resize();
 
 document.body.addEventListener("keydown", function (e) {
   switch (e.which) {
@@ -41,3 +49,4 @@ document.body.addEventListener("keydown", function (e) {
   }
 });
 
+window.diaporama = diaporama;
