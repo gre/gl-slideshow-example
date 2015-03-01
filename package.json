@@ -1,6 +1,6 @@
 {
   "name": "gl-slideshow-example",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "WebGL Image Slidershow example with KenBurns effect and GLSL Transitions",
   "main": "index.js",
   "repository": {
