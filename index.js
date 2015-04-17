@@ -38,10 +38,10 @@ document.body.addEventListener("keydown", function (e) {
       diaporama.playbackRate /= 1.5;
       break;
     case 37: // Left
-      diaporama.prev();
+      diaporama.prev(500);
       break;
     case 39: // Right
-      diaporama.next();
+      diaporama.next(500);
       break;
     case 32: // Space
       diaporama.paused = !diaporama.paused;
